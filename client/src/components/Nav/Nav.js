@@ -32,7 +32,7 @@ export default class Nav extends Component {
         return (
             <div className={currentPage === "home" || currentPage === "" ? "navbox-home" : "navbox"}>
                 <div className={currentPage === "home" || currentPage === "" ? "navbox-profile-home" : "navbox-profile"}>
-                    <h1 className="profile-name">{currentPage === "home" || currentPage === "" ? "Hello World! I am Katherine" : "Katherine He"}</h1>
+                    <h1 className="profile-name">{currentPage === "home" || currentPage === "" ? "Hello World!" : "Katherine He"}</h1>
                     <h2 className="profile-position">{currentPage === "home" || currentPage === "" ? "Software developer from NYC" : "Full-stack Developer"}</h2>
                     <hr style={currentPage === "home" || currentPage === "" ? {display: "none"} : {}}/>
                 </div>
