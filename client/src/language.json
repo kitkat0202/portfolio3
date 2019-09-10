@@ -1,0 +1,114 @@
+[
+    {
+        "name": "AJAX",
+        "iconbool": true,
+        "showbool": false,
+        "span": "whh:ajax",
+        "icon": "fas fa-code"
+    },
+    {
+        "name": "Bootstrap",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:bootstrap",
+        "icon": "devicon-bootstrap-plain"
+    },
+    {
+        "name": "CSS",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:css-3",
+        "icon": "devicon-css3-plain-wordmark"
+    },
+    {
+        "name": "ExpressJS",
+        "iconbool": true,
+        "showbool": true,
+        "span": "",
+        "icon": "devicon-express-original"
+    },
+    {
+        "name": "Firebase",
+        "iconbool": true,
+        "showbool": false,
+        "span": "fas fa-fire",
+        "icon": "logos:firebase"
+    },
+    {
+        "name": "Git",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:git-icon",
+        "icon": "devicon-git-plain"
+    },
+    {
+        "name": "Holochain",
+        "iconbool": true,
+        "showbool": false,
+        "span": "",
+        "icon": ""
+    },
+    {
+        "name": "HTML",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:html-5",
+        "icon": "devicon-html5-plain-wordmark"
+    },
+    {
+        "name": "Javascript",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:javascript",
+        "icon": "devicon-javascript-plain"
+    },
+    {
+        "name": "jQuery",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:jquery",
+        "icon": "devicon-jquery-plain"
+    },
+    {
+        "name": "MongoDB",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:mongodb",
+        "icon": "devicon-mongodb-plain-wordmark"
+    },
+    {
+        "name": "NodeJS",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:nodejs",
+        "icon": "devicon-nodejs-plain-wordmark"
+    },
+    {
+        "name": "React",
+        "iconbool": true,
+        "showbool": true,
+        "span": "logos:react",
+        "icon": "devicon-react-original"
+    },
+    {
+        "name": "Redux",
+        "iconbool": true,
+        "showbool": false,
+        "span": "logos:redux",
+        "icon": ""
+    },
+    {
+        "name": "Sequalize",
+        "iconbool": true,
+        "showbool": true,
+        "span": "",
+        "icon": "devicon-sequelize-plain"
+    },
+    {
+        "name": "SQL",
+        "iconbool": true,
+        "showbool": true,
+        "span": "simple-icons:mysql",
+        "icon": "devicon-mysql-plain-wordmark"
+    }
+]

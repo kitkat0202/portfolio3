@@ -1,0 +1,32 @@
+/* .profile-info {
+    margin: 50px 20px;
+} */
+
+.project-bg-img {
+    position: fixed;
+    top: -50px;
+    right: 10%;
+    width: 550px;
+    /* transform: rotate(8deg); */
+    opacity: .45;
+    z-index: -1;
+}
+
+
+/* ////////////////////////////////////// */
+/* //////////// Media Queries /////////// */
+/* ////////////////////////////////////// */
+@media (max-width : 2200px) {
+    .project-bg-img {
+        right: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .project-bg-img {
+        position: absolute;
+        top: 350px;
+        right: 0px;
+        width: 100%;
+    }
+}

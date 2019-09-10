@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Error.css'
 
-export default class Nav extends Component {
+export default class Error extends Component {
     render() {
         return (
             <div>

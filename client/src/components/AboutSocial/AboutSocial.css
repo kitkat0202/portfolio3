@@ -1,0 +1,26 @@
+.social {
+    text-align: center;
+    
+}
+
+.social a {
+    font-size: 4.5em;
+    width: 100%;
+    color: var(--navColor);
+    transition: all ease-in-out 270ms;
+    -webkit-transition: all ease-in-out 270ms;
+}
+
+.social p {
+    font-weight: bolder;
+    opacity: 0;
+}
+
+.social a:hover {
+    color: var(--primaryLight);
+    text-shadow: 0px 0px .5px var(--primeDark);
+}
+
+.social a:hover p{
+    opacity: 1;
+}

@@ -1,0 +1,109 @@
+.card-box {
+    position: relative;
+}
+
+.project-card {
+    position: relative;
+    margin: 10px auto;
+    background: #516166f6;
+}
+
+.project-card::before, .project-card::after {
+    content: '';
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: 1.25em;
+    right: 1.25em;
+    opacity: 1;
+    transition: -webkit-transform ease-out 270ms;
+    transition: transform ease-out 270ms;
+    transition: transform ease-out 270ms, -webkit-transform ease-out 270ms;
+}
+
+.project-card::before {
+    border-top: .6px solid #fff;
+    border-bottom: .6px solid #fff;
+    -webkit-transform: scale(1.09, 1.08);
+        transform: scale(1.09, 1.08);
+
+}
+
+.project-card::after {
+    border-left: .6px solid #fff;
+    border-right: .6px solid #fff;
+    -webkit-transform: scale(1.05, 1.12);
+            transform: scale(1.05, 1.12);
+}
+
+.project-card:hover {
+    cursor: pointer;
+}
+
+.project-card:hover::before {
+    -webkit-transform: scale(0, 1);
+        transform: scale(0, 1);
+}
+
+.project-card:hover::after {
+    -webkit-transform: scale(1, 0);
+        transform: scale(1, 0);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+    opacity: .1;
+    transition: opacity ease-out 1.5s;
+}
+
+.project-card:hover img {
+    opacity: 1;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity ease-out 250ms;
+}
+
+.card-box:hover .card-text {
+    opacity: 0;
+    color: #ffffff00;
+}
+
+
+/* //////////// */
+/* text centred */
+/* //////////// */
+.card-title {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: .5px;
+    line-height: 28px;
+}
+
+.small-text {
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .card-box {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-box {
+        padding: 0;
+    }
+}

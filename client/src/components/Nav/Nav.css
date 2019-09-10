@@ -1,21 +1,3 @@
-.navbox-home {
-    border: 1px solid #000;
-    width: calc(100vw - 20px);
-    height: calc(100vh - 20px);
-    position: absolute;
-    display: flex;
-}
-
-.navbox-profile-home {
-    margin: auto;
-}
-
-.navbox-links-home {
-    margin: auto;
-    letter-spacing: 2px;
-}
-
-
 /* ////////////////////////////// */
 /* /////// Not Home Page //////// */
 /* ////////////////////////////// */
@@ -25,10 +7,11 @@
     width: 260px;
     height: 390px;
     top: 15%;
-    left: 20%;
+    left: 5%;
     box-shadow: -8px 8px 5px #949494cc;
     min-width: 220px;
     letter-spacing: 2px;
+    transition: all 300ms ease-in-out;
 }
 
 a:-webkit-any-link {
@@ -55,6 +38,10 @@ a:-webkit-any-link {
     font-size: 16px;
 }
 
+.navbox .nav-shadow-mark {
+    display: none;
+}
+
 .navbox-profile hr {
     margin-top: 15px;
     margin-left: 10px;
@@ -72,13 +59,13 @@ a:-webkit-any-link {
     min-width: 220px;
 }
 
-.navbox-links ul li{
+ul li{
     position: relative;
     list-style-type: none;
     height: 60px;
 }
 
-.navbox-links .nlink {
+.nlink {
     text-transform: capitalize;
     color: var(--primaryLight);
     font-size: 18px;
@@ -89,9 +76,10 @@ a:-webkit-any-link {
     padding: 12px 35px;
     background-color: var(--navColor);
     transition: all 70ms ease-in-out;
+    font-weight: bold;
 }
 
-.navbox-links .nlink:hover {
+.nlink:hover {
     cursor: pointer;
     color: #fff;
     top: 0px;
@@ -100,16 +88,78 @@ a:-webkit-any-link {
     box-shadow: -5px 5px 4px #4d4d4d6b;
 }
 
-.navbox-links .nlink:active {
+.nlink:active {
     top: 5px;
     left: 50px;
     right: -20px;
     box-shadow: none;
 }
 
-.navbox-links .nlinkActive {
+.nlinkActive {
     color: #fff;
+    font-weight: bolder;
 }
+
+
+
+
+
+
+
+/* ////////////////////////////// */
+/* ///////// Home Page ////////// */
+/* ////////////////////////////// */
+.navbox-profile-home {
+    text-align: center;
+    width: 270px;
+    height: 270px;
+    margin: 15vh auto 5vh;
+    border-radius: 50%;
+    border: 3px solid var(--primaryLight);
+    box-shadow: 0 0 6px 3px var(--navColor);
+    color: var(--navColor);
+    transition: all 300ms ease-in-out;
+}
+
+.navbox-profile-home .profile-name{
+    font-size: 33px;
+    margin-top: 87px;
+}
+
+.navbox-profile-home .profile-position{
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.navbox-profile-home .nav-shadow-mark {
+    text-shadow: -2.5px 0px 1px var(--primaryLight);
+}
+
+.navbox-links-home {
+    letter-spacing: 2px;
+}
+
+.navbox-home ul li{
+    display: inline-block;
+    width: 21%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.navbox-home .nlink {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    outline: 2px solid var(--thirdyLight);
+}
+
+.navbox-home .nlink:hover {
+    outline: 2px solid var(--btnhover);
+    outline-offset: 5px;
+}
+
+
+
 
 
 
@@ -120,9 +170,9 @@ a:-webkit-any-link {
     /* ////////////////////////////// */
     /* /////// Not Home Page //////// */
     /* ////////////////////////////// */
-	.navbox {
-        left: 10%;
-    }
+	/* .navbox {
+        left: 5%;
+    } */
 }
 
 @media (max-width : 1440px) {
@@ -134,22 +184,14 @@ a:-webkit-any-link {
     }
 }
 
-@media (max-width : 992px) {
-    /* ////////////////////////////// */
-    /* /////// Not Home Page //////// */
-    /* ////////////////////////////// */
-	.navbox {
-        left: 35px;
-    }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     /* ////////////////////////////// */
     /* /////// Not Home Page //////// */
     /* ////////////////////////////// */
     .navbox {
         position: static;
         vertical-align: middle;
+        left: 35px;
         width: auto;
         height: auto;
         margin: 120px 40px 20px 40px;
@@ -215,6 +257,25 @@ a:-webkit-any-link {
         color: #fff;
         border-bottom: 2px solid #fff;
     }
+
+
+/* ////////////////////////////// */
+/* ///////// Home Page ////////// */
+/* ////////////////////////////// */
+    .navbox-home ul li{
+        display: inline-block;
+        width: 46%;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .navbox-home .nlink:hover {
+        outline-offset: 1px;
+    }
+}
+
+@media (max-width : 768px) {
+
 }
 
 @media (max-width: 576px) {
@@ -225,8 +286,8 @@ a:-webkit-any-link {
         margin: 120px 10px 20px;
     }
 
-    .navbox-links .nlink {
-        font-size: 12px;
+    .nlink {
+        font-size: 14px;
     }
 }
 
@@ -239,6 +300,38 @@ a:-webkit-any-link {
         width: calc(50% - 10px);
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    /* ////////////////////////////// */
+    /* ///////// Home Page ////////// */
+    /* ////////////////////////////// */
+    .navbox-profile-home {
+        width: 225px;
+        height: 225px;
+        margin: 10px auto 15px;
+    }
+
+    .navbox-profile-home .profile-name{
+        font-size: 28px;
+        margin-top: 62px;
+    }
+    
+    .navbox-profile-home .profile-position{
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .navbox-home .nlink {
+        margin: 0 35px;
+        padding: 10px 35px;
+    }
+
+    .navbox-home ul li{
+        display: block;
+        height: 52px;
+        width: 96%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 

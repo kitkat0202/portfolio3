@@ -1,0 +1,126 @@
+.justify-txt {
+    text-align: center;
+    letter-spacing: .5px;
+}
+
+/* //////////////////// */
+/* ////// Skills ////// */
+/* //////////////////// */
+.lang-div {
+    text-align: center;
+}
+
+.lang-div i {
+    font-size: 60px;
+    text-shadow: 0px 0px .2px #000;
+    color: var(--primaryLight);
+}
+
+.lang-div p {
+    color: var(--navColor);
+}
+
+
+
+/* //////////////////// */
+/* ////// Resume ////// */
+/* //////////////////// */
+.about-info img {
+    width: 100%;
+    border: 1px solid #aaa;
+}
+
+.resume-link-div {
+    text-align: center;
+    font-size: 50px;
+    margin: 25px 60px 50px 60px;
+    padding-top: 12px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    background-color: #d3dee9;
+    box-shadow: inset -2px 2px 5px #9b9b9bb7;
+    height: 74px;
+}
+
+.resume-link-div p {
+    display: inline-block;
+}
+
+.resume-link-div i {
+    display: block;
+}
+
+.resume-link-text {
+    font-size: 18px;
+    opacity: 0;
+    text-shadow: 0px 0px .4px #000;
+    letter-spacing: .7px;
+    font-weight: bolder;
+}
+
+.resume-link-div a {
+    padding: 30px;
+    color: var(--navColor);
+    transition: all ease-in-out 270ms;
+    -webkit-transition: all ease-in-out 270ms;
+}
+
+.resume-link-div a:hover {
+    color: var(--primaryLight);
+}
+
+.resume-link-div a:hover .resume-link-text {
+    opacity: 1;
+}
+
+.resume-link-div a:hover i {
+    text-shadow: 0px 0px .4px #000;
+}
+
+
+
+
+/* ////////////////////////////////////// */
+/* //////////// Media Queries /////////// */
+/* ////////////////////////////////////// */
+@media (max-width : 1150px) {
+    .resume-link-div {
+        margin: 25px 0px 50px 0px;
+    }
+}
+
+@media (max-width : 992px) {
+    .corner-box {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 576px) {
+    .resume-link-div {
+        font-size: 40px;
+    }
+
+    .resume-link-div a {
+        padding: 10px;
+    }
+
+    .resume-link-text {
+        display: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .resume-link-div {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .lang-div i {
+        font-size: 50px;
+    }
+}
